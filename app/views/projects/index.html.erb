@@ -1,0 +1,8 @@
+<% @projects.each do |project| %>
+	<div class="portfolio-square">
+		<div class="inside-square" "blur">
+			<div class="blur"><%= image_tag "#{project.img_path}" %></div>
+			<%= link_to project.title, project %>
+		</div>
+	</div>	
+<% end %>
