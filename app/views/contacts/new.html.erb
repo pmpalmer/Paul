@@ -1,6 +1,8 @@
-<%= simple_form_for @contact do |f| %>
-  <%= f.input :name %>
-  <%= f.input :email %>
-  <%= f.input :message, as: :text %>
-  <%= f.button :submit %>
-<% end %>
+<div id="formcontainer">	
+  <%= simple_form_for @contact do |f| %>
+	  <%= f.input :name %>
+	  <%= f.input :email %>
+	  <%= f.input :message, as: :text %>
+	  <%= f.submit 'send' %>
+  <% end %>
+</div>

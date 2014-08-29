@@ -1,8 +1,11 @@
 <% @projects.each do |project| %>
 	<div class="portfolio-square">
-		<div class="inside-square" "blur">
-			<div class="blur"><%= image_tag "#{project.img_path}" %></div>
-			<%= link_to project.title, project %>
-		</div>
+		<%= link_to project do %>
+			<div class="inside-square" "blur">
+				<div class="blur"><%= image_tag "#{project.img_path}" %></div>	
+				<p><%= project.title.upcase %></p>
+			</div>
+		<% end %>
 	</div>	
 <% end %>
+

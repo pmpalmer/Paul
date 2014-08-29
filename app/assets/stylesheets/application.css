@@ -155,6 +155,7 @@ nav li {
 
 #content-wrapper {
 	margin-top: 150px;
+  overflow: hidden;
 }
 
 .portfolio-square {
@@ -196,12 +197,19 @@ nav li {
 	height: 100%;
 }
 
+.inside-square p {
+	position: absolute;
+	top: 40%;
+	left: 45%;
+	opacity: 0;
+}
+
 .portfolio-square .inside-square:hover img {
 	-webkit-filter: blur(4px);
 	transition: 1s ease;
 }
 
-.portfolio-square .inside-square:hover a {
+.portfolio-square .inside-square:hover p {
 	-webkit-transition: opacity 1s ease-in-out;
 	-moz-transition: opacity 1s ease-in-out;
 	-ms-transition: opacity 1s ease-in-out;
@@ -253,6 +261,116 @@ img {
 }
 
 
+
+/*************  SIMPLE_FORM CSS  ****************/
+
+
+/* ----- SimpleForm Styles ----- */
+#formcontainer {
+	width: 50%;
+  font-size: 15px;
+  margin: 50px auto;
+}
+
+.simple_form div.input {
+  margin-bottom: 10px;
+  clear: both; /* Required for Webkit, but not for Gecko */
+}
+
+.simple_form label {
+  float: left;
+  width: 100%;
+  text-align: right;
+  margin: 0;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+div.boolean, .simple_form input[type='submit'] {
+  margin-left: 120px;
+}
+
+div.boolean label, label.collection_radio_buttons {
+  float: none;
+  margin: 0;
+}
+
+label.collection_radio_buttons {
+  margin-right: 10px;
+  vertical-align: -2px;
+  margin-left: 2px;
+}
+
+.field_with_errors {
+  background-color: #ff3333;
+}
+
+.simple_form .error {
+  clear: left;
+  color: black;
+  display: block;
+  margin-left: 120px;
+}
+
+.simple_form .hint {
+  clear: left;
+  margin-left: 120px;
+  color: #555;
+  display: block;
+  font-style: italic;
+}
+
+input.radio {
+  margin-right: 5px;
+  vertical-align: -3px;
+}
+
+input.check_boxes {
+  margin-left: 3px;
+  vertical-align: -3px;
+}
+
+input#contact_name.string.required{
+  font-size: 15px;
+  height: 2em;
+  width: 95%;
+  border: none;
+  border-radius: 2px;
+}
+
+
+input#contact_email.string.email.required {
+  font-size: 15px;
+  height: 2em;
+  width: 95%;
+  border: none;
+  border-radius: 2px;
+}
+
+textarea#contact_message.text.optional {
+  font-size: 15px;
+  height: 6em;
+  width: 95%;
+  border: none;
+  border-radius: 2px;
+}
+
+label.collection_check_boxes {
+  float: none;
+  margin: 0;
+  vertical-align: -2px;
+  margin-left: 2px;
+}
+
+abbr {
+	display: none;
+}
+
+div.boolean, .simple_form input[type='submit'] {
+  margin-left: 0px;
+  border: none;
+
+}
 /***********  RESPONSIVE  ************/
 
 @media only screen and (max-width : 480px) {
@@ -291,6 +409,10 @@ img {
 
   #content-wrapper {
     margin-top: 50px;
+  }
+
+  #formcontainer {
+  	width: 95%;
   }
 }
 @media only screen and (max-width : 750px) and (min-width : 481px) {
