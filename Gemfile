@@ -41,3 +41,7 @@ gem 'simple_form', '~> 3.0.0.rc'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+group :production do 
+	gem 'pg', '~> 0.17.1'
+	gem 'rails_12factor'	
+end
