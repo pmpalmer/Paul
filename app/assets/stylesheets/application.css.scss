@@ -178,6 +178,10 @@ nav li {
 	overflow: hidden;
 }
 
+.blur {
+  height: 100%;
+}
+
 .blur img {
 	transition: 1s ease;
 	-webkit-backface-visibility: hidden;
