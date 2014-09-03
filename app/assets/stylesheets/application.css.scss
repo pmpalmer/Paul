@@ -18,11 +18,11 @@
 
 @font-face {
     font-family: 'ubunturegular';
-    src: asset-url('ubuntu-r-webfont.eot');
-    src: asset-url('ubuntu-r-webfont.eot?#iefix') format('embedded-opentype'),
-         asset-url('ubuntu-r-webfont.woff') format('woff'),
-         asset-url('ubuntu-r-webfont.ttf') format('truetype'),
-         asset-url('ubuntu-r-webfont.svg#ubunturegular') format('svg');
+    src: font-url('/assets/ubuntu-r-webfont.eot');
+    src: font-url('/assets/ubuntu-r-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('/assets/ubuntu-r-webfont.woff') format('woff'),
+         font-url('/assets/ubuntu-r-webfont.ttf') format('truetype'),
+         font-url('/assets/ubuntu-r-webfont.svg#ubunturegular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -31,11 +31,11 @@
 
 @font-face {
     font-family: 'ubuntulight';
-    src: asset-url('ubuntu-l-webfont.eot');
-    src: asset-url('ubuntu-l-webfont.eot?#iefix') format('embedded-opentype'),
-         asset-url('ubuntu-l-webfont.woff') format('woff'),
-         asset-url('ubuntu-l-webfont.ttf') format('truetype'),
-         asset-url('ubuntu-l-webfont.svg#ubuntulight') format('svg');
+    src: font-url('/assets/ubuntu-l-webfont.eot');
+    src: font-url('/assets/ubuntu-l-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('/assets/ubuntu-l-webfont.woff') format('woff'),
+         font-url('/assets/ubuntu-l-webfont.ttf') format('truetype'),
+         font-url('/assets/ubuntu-l-webfont.svg#ubuntulight') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -44,11 +44,11 @@
 
 @font-face {
     font-family: 'ubuntumedium';
-    src: asset-url('ubuntu-m-webfont.eot');
-    src: asset-url('ubuntu-m-webfont.eot?#iefix') format('embedded-opentype'),
-         asset-url('ubuntu-m-webfont.woff') format('woff'),
-         asset-url('ubuntu-m-webfont.ttf') format('truetype'),
-         asset-url('ubuntu-m-webfont.svg#ubuntumedium') format('svg');
+    src: font-url('/assets/ubuntu-m-webfont.eot');
+    src: font-url('/assets/ubuntu-m-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('/assets/ubuntu-m-webfont.woff') format('woff'),
+         font-url('/assets/ubuntu-m-webfont.ttf') format('truetype'),
+         font-url('/assets/ubuntu-m-webfont.svg#ubuntumedium') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -56,11 +56,11 @@
 
 @font-face {
     font-family: 'vollkornbold';
-    src: asset-url('vollkorn-bold-webfont.eot');
-    src: asset-url('vollkorn-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         asset-url('vollkorn-bold-webfont.woff') format('woff'),
-         asset-url('vollkorn-bold-webfont.ttf') format('truetype'),
-         asset-url('vollkorn-bold-webfont.svg#vollkornbold') format('svg');
+    src: font-url('/assets/vollkorn-bold-webfont.eot');
+    src: font-url('/assets/vollkorn-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('/assets/vollkorn-bold-webfont.woff') format('woff'),
+         font-url('/assets/vollkorn-bold-webfont.ttf') format('truetype'),
+         font-url('/assets/vollkorn-bold-webfont.svg#vollkornbold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -69,11 +69,11 @@
 
 @font-face {
     font-family: 'vollkornregular';
-    src: asset-url('vollkorn-regular-webfont.eot');
-    src: asset-url('vollkorn-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         asset-url('vollkorn-regular-webfont.woff') format('woff'),
-         asset-url('vollkorn-regular-webfont.ttf') format('truetype'),
-         asset-url('vollkorn-regular-webfont.svg#vollkornregular') format('svg');
+    src: font-url('/assets/vollkorn-regular-webfont.eot');
+    src: font-url('/assets/vollkorn-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('/assets/vollkorn-regular-webfont.woff') format('woff'),
+         font-url('/assets/vollkorn-regular-webfont.ttf') format('truetype'),
+         font-url('/assets/vollkorn-regular-webfont.svg#vollkornregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
