@@ -333,7 +333,7 @@ input.check_boxes {
 input#contact_name.string.required{
   font-size: 15px;
   height: 2em;
-  width: 95%;
+  width: 100%;
   border: none;
   border-radius: 2px;
 }
@@ -342,7 +342,7 @@ input#contact_name.string.required{
 input#contact_email.string.email.required {
   font-size: 15px;
   height: 2em;
-  width: 95%;
+  width: 100%;
   border: none;
   border-radius: 2px;
 }
@@ -350,7 +350,7 @@ input#contact_email.string.email.required {
 textarea#contact_message.text.optional {
   font-size: 15px;
   height: 6em;
-  width: 95%;
+  width: 100%;
   border: none;
   border-radius: 2px;
 }
