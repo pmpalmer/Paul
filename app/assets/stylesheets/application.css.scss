@@ -173,6 +173,7 @@ header nav {
 
     .blur {
       height: 100%;
+      -webkit-backface-visibility: hidden;
     }
     
     img {
