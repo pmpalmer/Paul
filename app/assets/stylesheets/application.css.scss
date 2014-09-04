@@ -99,7 +99,7 @@ a {
 }
 
 a:visited {
-  color: #000;
+  text-decoration: none;
 }
 
 
@@ -190,6 +190,7 @@ nav li {
 .inside-square img {
 	display: block;
 	margin: 0;
+  width: 100%;
 }
 
 .inside-square a {
@@ -203,9 +204,10 @@ nav li {
 
 .inside-square p {
 	position: absolute;
-	top: 40%;
-	left: 45%;
+	top: 50%;
+	left: 50%;
 	opacity: 0;
+  color: #fff;
 }
 
 .portfolio-square .inside-square:hover img {
