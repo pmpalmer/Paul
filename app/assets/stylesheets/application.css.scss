@@ -1,22 +1,10 @@
 @font-face {
-    font-family: 'ubunturegular';
-    src: font-url('ubuntu-r-webfont.eot');
-    src: font-url('ubuntu-r-webfont.eot?#iefix') format('embedded-opentype'),
-         font-url('ubuntu-r-webfont.woff') format('woff'),
-         font-url('ubuntu-r-webfont.ttf') format('truetype'),
-         font-url('ubuntu-r-webfont.svg#ubunturegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'ubuntulight';
-    src: font-url('ubuntu-l-webfont.eot');
-    src: font-url('ubuntu-l-webfont.eot?#iefix') format('embedded-opentype'),
-         font-url('ubuntu-l-webfont.woff') format('woff'),
-         font-url('ubuntu-l-webfont.ttf') format('truetype'),
-         font-url('ubuntu-l-webfont.svg#ubuntulight') format('svg');
+    font-family: 'roboto_condensedbold';
+    src: font-url('robotocondensed-bold-webfont.eot');
+    src: font-url('robotocondensed-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('robotocondensed-bold-webfont.woff') format('woff'),
+         font-url('robotocondensed-bold-webfont.ttf') format('truetype'),
+         font-url('robotocondensed-bold-webfont.svg#roboto_condensedbold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -24,12 +12,25 @@
 
 
 @font-face {
-    font-family: 'ubuntumedium';
-    src: font-url('ubuntu-m-webfont.eot');
-    src: font-url('ubuntu-m-webfont.eot?#iefix') format('embedded-opentype'),
-         font-url('ubuntu-m-webfont.woff') format('woff'),
-         font-url('ubuntu-m-webfont.ttf') format('truetype'),
-         font-url('ubuntu-m-webfont.svg#ubuntumedium') format('svg');
+    font-family: 'roboto_condensedlight';
+    src: font-url('robotocondensed-light-webfont.eot');
+    src: font-url('robotocondensed-light-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('robotocondensed-light-webfont.woff') format('woff'),
+         font-url('robotocondensed-light-webfont.ttf') format('truetype'),
+         font-url('robotocondensed-light-webfont.svg#roboto_condensedlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'roboto_condensedregular';
+    src: font-url('robotocondensed-regular-webfont.eot');
+    src: font-url('robotocondensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('robotocondensed-regular-webfont.woff') format('woff'),
+         font-url('robotocondensed-regular-webfont.ttf') format('truetype'),
+         font-url('robotocondensed-regular-webfont.svg#roboto_condensedregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -73,10 +74,13 @@ a {
   text-decoration: none;
 
   &:visited {
-    text-decoration: none;
+    // color: #000;
   }
 }
 
+h1 {
+  font-family: 'roboto_condensedregular'
+}
 
 header {
   width: 100%;
@@ -87,7 +91,7 @@ header {
     width: 45%;
     float: left;
     position: relative;
-      font-family: 'ubuntumedium';
+      font-family: 'roboto_condensedbold';
       font-size: 3em;
       color: #FA4D32;
 
@@ -112,9 +116,14 @@ header nav {
     li {
       display: inline-block;
       width: 33.3%; 
-      font-size: 1.1em;
+      font-size: 1.3em;
       float: left;
-        font-family: 'ubunturegular'
+      font-family: 'roboto_condensedregular';
+      color: #3A3A3C;
+
+      a {
+        color: #3A3A3C;
+      }
     }
   }
 }
@@ -210,7 +219,6 @@ header nav {
 
 #about_title {
   text-align: center;
-  font-family: 'ubunturegular';
 }
 
 #img, #paragraph {
