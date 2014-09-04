@@ -1,21 +1,3 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
- 
- /****** FONTS ******/
-
 @font-face {
     font-family: 'ubunturegular';
     src: font-url('ubuntu-r-webfont.eot');
@@ -79,217 +61,208 @@
 }
 
 
-
-
-/*********  MAIN CSS  *********/
-
-/** {
-  box-sizing: border-box;
-}*/
+/****  LAYOUT STYLES  ****/
 
 body {
-	margin: 0;
-	padding: 0;
-	background: #ECECEC;
+  margin: 0;
+  padding: 0;
+  background: #E6E6E2;
 }
-
 
 a {
-	text-decoration: none;
-}
-
-a:visited {
   text-decoration: none;
+
+  &:visited {
+    text-decoration: none;
+  }
 }
 
 
 header {
-	width: 100%;
-	background: #fff
+  width: 100%;
+  background: #fff;
+  
+  #logo {
+    top: 50%;
+    width: 45%;
+    float: left;
+    position: relative;
+      font-family: 'ubuntumedium';
+      font-size: 3em;
+      color: #FA4D32;
+
+      a {
+        color: #FA4D32;
+      }
+  }
 }
 
-
-header #logo {
-	top: 50%;
-	width: 45%;
-	float: left;
-	position: relative;
-  font-family: 'ubuntumedium';
-  font-size: 3em;
-  color: #FA4D32;
-}
-
-header #logo a {
-	color: #FA4D32;
-}
 
 header nav {
-	width: 35%;
-	float: right;
-  margin-top: 50px;
+  width: 35%;
+  float: right;
+    margin-top: 50px;
+  
+  ul {
+    list-style: none;
+      padding: 0;
+        margin: 0;
+      text-align: center;
+    
+    li {
+      display: inline-block;
+      width: 33.3%; 
+      font-size: 1.1em;
+      float: left;
+        font-family: 'ubunturegular'
+    }
+  }
 }
-
-nav ul {
-	list-style: none;
-	padding: 0;
-  margin: 0;
-	text-align: center;
-}
-
-nav li {
-	display: inline-block;
-	width: 33.3%;	
-	font-size: 1.1em;
-	float: left;
-  font-family: 'ubunturegular'
-}
-
-
-
 
 #page_wrapper {
-	max-width: 60em;
-	margin: 0 auto;
-	overflow: hidden;
-}
-
-#content-wrapper {
-	margin-top: 150px;
+  max-width: 60em;
+  margin: 0 auto;
   overflow: hidden;
+  
+  #content-wrapper{
+    margin-top: 150px;
+        overflow: hidden;
+  }
 }
 
-.portfolio-square {
-	width: 25%;
+/****  WORK PAGE  ****/
+
+#portfolio-square {
+  width: 25%;
     padding-bottom: 25%;
-	position: relative;
-	float: left;
-}
+  position: relative;
+  float: left;
+  
+  .inside-square {
+    position: absolute;
+    left: 2px;
+    right: 2px; 
+    top: 2px;
+    bottom: 2px;
+    overflow: hidden;
 
-.portfolio-square:hover {
+    &:hover {
+      img {
+        -webkit-filter: blur(4px);
+        transition: 1s ease;
+      }
 
-}
-	
-.inside-square {
-	position: absolute;
-	left: 2px;
-	right: 2px; 
-	top: 2px;
-	bottom: 2px;
-	overflow: hidden;
-}
+      p {
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -ms-transition: opacity 1s ease-in-out;
+          -o-transition: opacity 1s ease-in-out;
+          transition: opacity 1s ease-in-out;
+          opacity: 1;
+      }
+    }
 
-.blur {
-  height: 100%;
-}
+    .blur {
+      height: 100%;
+    }
+    
+    img {
+      display: block;
+      margin: 0;
+        width: 100%;
+    }
 
-.blur img {
-	transition: 1s ease;
-	-webkit-backface-visibility: hidden;
-}
+    a {
+      position: absolute; 
+      top: 0%;
+      opacity: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
 
-.inside-square img {
-	display: block;
-	margin: 0;
-  width: 100%;
-}
+    p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+        color: #fff;
+    }
 
-.inside-square a {
-	position: absolute; 
-	top: 0%;
-	opacity: 0;
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-
-.inside-square p {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	opacity: 0;
-  color: #fff;
-}
-
-.portfolio-square .inside-square:hover img {
-	-webkit-filter: blur(4px);
-	transition: 1s ease;
-}
-
-.portfolio-square .inside-square:hover p {
-	-webkit-transition: opacity 1s ease-in-out;
-	-moz-transition: opacity 1s ease-in-out;
-	-ms-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-    opacity: 1;
+  }
 }
 
 
-/*******  PROJECTS  PAGES   **********/
+/****  PROJECTS PAGES  ****/
 
 .project_title {
-	width: 100%;
-	text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 
 .project_description {
-	max-width: 75%;
-	margin: 0 auto;
+  max-width: 75%;
+  margin: 0 auto;
 }
 
-.project_image{
-
-}
-
-
-/********   ABOUT   ************/
+/****  ABOUT  ****/
 
 #about_title {
-	width: 100%;
-	text-align: center;
+  text-align: center;
+  font-family: 'ubunturegular';
 }
 
-#about_paragraph {
-	width: 45%;
-	float: left;
-  font-family: 'vollkornregular';
+#img, #paragraph {
+    width: 50%;
+    padding-bottom: 50%;
+    position: relative;
+    float: left;
+
+    #inner_img, #inner-paragraph {
+        position: absolute;
+        left: 15px;
+        right: 15px; 
+        top: 15px;
+        bottom: 15px;
+        overflow: hidden;
+    }
+
+    p {
+        position: absolute;
+        text-align: left;
+        margin: 0;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
 }
-#img {
-  float: right;
-}
-
-img {
-  width: 450px;
-  height: auto;
-  align: left;
-  margin: 10px;
-}
 
 
+/****  SIMPLE _FORM CSS  ****/
 
-/*************  SIMPLE_FORM CSS  ****************/
-
-
-/* ----- SimpleForm Styles ----- */
 #formcontainer {
-	width: 50%;
-  font-size: 15px;
-  margin: 50px auto;
+  width: 50%;
+    font-size: 15px;
+    margin: 50px auto;
 }
 
-.simple_form div.input {
-  margin-bottom: 10px;
-  clear: both; /* Required for Webkit, but not for Gecko */
-}
+.simple_form { 
+  div.input {
+      margin-bottom: 10px;
+      clear: both; /* Required for Webkit, but not for Gecko */
+  }
 
-.simple_form label {
-  float: left;
-  width: 100%;
-  text-align: right;
-  margin: 0;
-  text-align: left;
-  margin-bottom: 5px;
+  label {
+    float: left;
+     width: 100%;
+     text-align: right;
+     margin: 0;
+     text-align: left;
+     margin-bottom: 5px;
+  }
 }
 
 div.boolean, .simple_form input[type='submit'] {
@@ -311,29 +284,33 @@ label.collection_radio_buttons {
   background-color: #ff3333;
 }
 
-.simple_form .error {
-  clear: left;
-  color: black;
-  display: block;
-  margin-left: 120px;
+.simple_form {
+  .error {
+    clear: left;
+    color: black;
+      display: block;
+    margin-left: 120px;
+  }
+
+  .hint {
+    clear: left;
+    margin-left: 120px;
+    color: #555;
+    display: block;
+    font-style: italic;
+  }
 }
 
-.simple_form .hint {
-  clear: left;
-  margin-left: 120px;
-  color: #555;
-  display: block;
-  font-style: italic;
-}
+input {
+  .radio {
+    margin-right: 5px;
+    vertical-align: -3px;
+  }
 
-input.radio {
-  margin-right: 5px;
-  vertical-align: -3px;
-}
-
-input.check_boxes {
-  margin-left: 3px;
-  vertical-align: -3px;
+  .check_boxes {
+    margin-left: 3px;
+        vertical-align: -3px;
+  }
 }
 
 input#contact_name.string.required{
@@ -351,7 +328,8 @@ input#contact_email.string.email.required {
   width: 100%;
   border: none;
   border-radius: 2px;
-}
+}  
+
 
 textarea#contact_message.text.optional {
   font-size: 15px;
@@ -369,7 +347,7 @@ label.collection_check_boxes {
 }
 
 abbr {
-	display: none;
+  display: none;
 }
 
 div.boolean, .simple_form input[type='submit'] {
@@ -377,10 +355,17 @@ div.boolean, .simple_form input[type='submit'] {
   border: none;
 
 }
+
+
+
+
+
 /***********  RESPONSIVE  ************/
+
 
 @media only screen and (max-width : 480px) {
   /* Smartphone view: 1 tile */
+  
   .portfolio-square {
     width: 50%;
     padding-bottom: 50%;
@@ -394,9 +379,8 @@ div.boolean, .simple_form input[type='submit'] {
     padding: 0;
     text-align: center;
     font-size: 2.25em;
-
-
   }
+  
   header nav {
     float: none;
     margin: 0 auto;
@@ -413,12 +397,24 @@ div.boolean, .simple_form input[type='submit'] {
     float: left;
   }
 
-  #content-wrapper {
-    margin-top: 50px;
+  #page_wrapper { 
+    #content-wrapper {
+      margin-top: 50px;
+    }
+  }
+
+  #img, #paragraph {
+    width: 100%;
+    padding-bottom: 40%;
+
+    #inner_img, #inner_paragraph {
+      width: 40%;
+      margin: 0 auto;
+    }
   }
 
   #formcontainer {
-  	width: 95%;
+    width: 95%;
   }
 }
 @media only screen and (max-width : 750px) and (min-width : 481px) {
@@ -452,8 +448,20 @@ div.boolean, .simple_form input[type='submit'] {
     float: left;
   }
 
-  #content-wrapper {
-    margin-top: 100px;
+  #page_wrapper {
+    #content-wrapper {
+      margin-top: 100px;
+    }
+  }
+
+  #img, #paragraph {
+    width: 100%;
+    padding-bottom: 40%;
+
+    #inner_img, #inner_paragraph {
+      width: 40%;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -464,6 +472,36 @@ div.boolean, .simple_form input[type='submit'] {
     padding-bottom: 25%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
