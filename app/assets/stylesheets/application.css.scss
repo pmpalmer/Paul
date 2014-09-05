@@ -327,6 +327,7 @@ input#contact_name.string.required{
   width: 100%;
   border: none;
   border-radius: 2px;
+  padding: 0;
 }
 
 
@@ -336,6 +337,7 @@ input#contact_email.string.email.required {
   width: 100%;
   border: none;
   border-radius: 2px;
+  padding: 0;
 }  
 
 
@@ -345,6 +347,7 @@ textarea#contact_message.text.optional {
   width: 100%;
   border: none;
   border-radius: 2px;
+  padding: 0;
 }
 
 label.collection_check_boxes {
