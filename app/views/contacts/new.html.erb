@@ -1,8 +1,10 @@
+<h1 id="contact_header">Lets Talk</h1>
+
 <div id="formcontainer">	
   <%= simple_form_for @contact do |f| %>
-	  <%= f.input :name %>
-	  <%= f.input :email %>
-	  <%= f.input :message, as: :text %>
-	  <%= f.submit 'send' %>
+	  <%= f.input :name, placeholder: 'Name' %>
+	  <%= f.input :email, placeholder: 'Email Address' %>
+	  <%= f.input :message, as: :text, placeholder: 'Message' %>
+	  <%= f.submit 'SUBMIT' %>
   <% end %>
 </div>
