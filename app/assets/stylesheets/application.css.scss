@@ -63,11 +63,18 @@
 
 
 /****  LAYOUT STYLES  ****/
+* {
+  margin: 0;
+}
+html {
+  height: 100%;
+}
 
 body {
   margin: 0;
   padding: 0;
   background: #E6E6E2;
+  height: 100%;
 }
 
 a {
@@ -128,10 +135,21 @@ header nav {
   }
 }
 
+
+.wrapper {
+  max-width: 60em;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 #page_wrapper {
   max-width: 60em;
   margin: 0 auto;
   overflow: hidden;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -2em;
   
   #content-wrapper{
     margin-top: 150px;
@@ -381,8 +399,18 @@ div.boolean, .simple_form input[type='submit'] {
   }
 }
 
+/****  FOOTER  ****/
 
+footer {
+  width: 100%;
+  background: #fff;
 
+  p {
+  }
+}
+.push {
+  height: 2em;
+}
 
 
 /***********  RESPONSIVE  ************/
