@@ -327,7 +327,8 @@ input#contact_name.string.required{
   width: 100%;
   border: none;
   border-radius: 2px;
-  padding: 0;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 
@@ -337,7 +338,8 @@ input#contact_email.string.email.required {
   width: 100%;
   border: none;
   border-radius: 2px;
-  padding: 0;
+  padding: 10px;
+  box-sizing: border-box;
 }  
 
 
@@ -347,7 +349,8 @@ textarea#contact_message.text.optional {
   width: 100%;
   border: none;
   border-radius: 2px;
-  padding: 0;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 label.collection_check_boxes {
@@ -369,7 +372,7 @@ div.boolean, .simple_form input[type='submit'] {
   padding: 10px 30px;
   font-size: 15px;
   color: #2C2C2E;
-  transition: .5s ease;
+  transition: .25s ease;
 
   &:hover {
     background: #2C2C2E;
@@ -434,9 +437,16 @@ div.boolean, .simple_form input[type='submit'] {
       margin: 0 auto;
     }
   }
-
+  h1#contact_header {
+    font-size: 1.5em;
+  }
   #formcontainer {
     width: 90%;
+    margin: 10px auto;
+  }
+  
+  .simple_form div.input {
+    margin-bottom: 15px;
   }
 }
 @media only screen and (max-width : 750px) and (min-width : 481px) {
