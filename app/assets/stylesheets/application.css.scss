@@ -76,7 +76,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #E6E6E2;
+//   background: #E6E6E2;
+background: #ddd;
   height: 100%;
 }
 
@@ -95,7 +96,7 @@ h1 {
 header {
   width: 100%;
   background: #fff;
-  
+
   #logo {
     top: 50%;
     width: 45%;
@@ -116,16 +117,16 @@ header nav {
   width: 35%;
   float: right;
     margin-top: 50px;
-  
+
   ul {
     list-style: none;
       padding: 0;
         margin: 0;
       text-align: center;
-    
+
     li {
       display: inline-block;
-      width: 33.3%; 
+      width: 33.3%;
       font-size: 1.3em;
       float: left;
       font-family: 'roboto_condensedregular';
@@ -157,7 +158,7 @@ header nav {
   height: 100%;
   margin: 0 auto -2em;
   padding: 20px;
-  
+
   #content-wrapper{
     margin-top: 150px;
     overflow: hidden;
@@ -177,12 +178,12 @@ header nav {
   box-sizing: border-box;
   margin-right: 2.6666%;
 
-  
+
 
   .inside-square {
     position: absolute;
     left: 0px;
-    right: 0px; 
+    right: 0px;
     top: 0px;
     bottom: 0px;
     overflow: hidden;
@@ -210,7 +211,7 @@ header nav {
       height: 100%;
       -webkit-backface-visibility: hidden;
     }
-    
+
     img {
       display: block;
       margin: 0;
@@ -218,7 +219,7 @@ header nav {
     }
 
     a {
-      position: absolute; 
+      position: absolute;
       top: 0%;
       opacity: 0;
       display: block;
@@ -271,7 +272,7 @@ header nav {
     #inner_img, #inner-paragraph {
         position: absolute;
         left: 15px;
-        right: 15px; 
+        right: 15px;
         top: 15px;
         bottom: 15px;
         overflow: hidden;
@@ -302,7 +303,7 @@ h1#contact_header {
     margin: 50px auto;
 }
 
-.simple_form { 
+.simple_form {
   div.input {
       margin-bottom: 30px;
       clear: both; /* Required for Webkit, but not for Gecko */
@@ -380,7 +381,7 @@ input#contact_email.string.email.required {
   border-radius: 2px;
   padding: 10px;
   box-sizing: border-box;
-}  
+}
 
 
 textarea#contact_message.text.optional {
@@ -441,7 +442,7 @@ footer {
 
 @media only screen and (max-width : 480px) {
   /* Smartphone view: 1 tile */
-   
+
   #content-wrapper {
     width: 95%;
     margin: 0 auto;
@@ -466,7 +467,7 @@ footer {
     text-align: center;
     font-size: 2.25em;
   }
-  
+
   header nav {
     float: none;
     margin: 0 auto;
@@ -483,7 +484,7 @@ footer {
     float: left;
   }
 
-  #page_wrapper { 
+  #page_wrapper {
     #content-wrapper {
       margin-top: 50px;
     }
@@ -505,7 +506,7 @@ footer {
     width: 90%;
     margin: 10px auto;
   }
-  
+
   .simple_form div.input {
     margin-bottom: 15px;
   }
@@ -564,7 +565,7 @@ footer {
 }
 
 @media only screen and (max-width : 1290px) and (min-width : 1051px) {
-  /* Medium desktop: 4 tiles */ 
+  /* Medium desktop: 4 tiles */
   .portfolio-square {
     width: 23%;
     padding-bottom: 23%;
